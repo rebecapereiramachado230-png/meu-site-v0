@@ -1,0 +1,85 @@
+SITE DE SORRIA BAURU - CLINICA ODONTOLOGICA EM BAURU
+Gerado pela Valy OS — valyos.com.br
+
+O QUE TEM AQUI DENTRO
+---------------------
+index.html   o site inteiro (HTML, CSS e JavaScript num arquivo só)
+imagens/     as fotos usadas no site
+LEIA-ME.txt  este arquivo
+
+Todas as imagens do site estão na pasta imagens/. O site não depende de mais nada.
+
+
+1) VER O SITE NO SEU COMPUTADOR
+-------------------------------
+Dê dois cliques no index.html. Abre no navegador, sem instalar nada.
+
+
+2) COLOCAR O SITE NO AR
+-----------------------
+Qualquer hospedagem serve. As duas mais rápidas, e de graça:
+
+  Netlify   app.netlify.com/drop
+            Arraste esta PASTA INTEIRA para a página. Em segundos ele
+            devolve um endereço no ar.
+
+  Vercel    vercel.com/new
+            Mesma ideia: arraste a pasta.
+
+Em hospedagem tradicional (Hostinger, HostGator, cPanel), envie o
+conteúdo desta pasta para a pasta public_html pelo gerenciador de
+arquivos ou por FTP.
+
+Para usar o domínio do cliente (exemplo.com.br), aponte o domínio para
+a hospedagem escolhida — as duas acima têm a opção "Domínio próprio"
+com o passo a passo.
+
+
+3) EDITAR O SITE
+----------------
+Abra o index.html no Bloco de Notas ou no VS Code.
+
+  - Os textos estão no meio do arquivo, em português, do jeito que
+    aparecem na tela. Procure a palavra que quer trocar e troque.
+  - As cores estão no começo, dentro de <style>, nas linhas que
+    começam com --. Troque o código da cor (ex.: #16a34a).
+  - Para trocar uma foto, coloque a nova na pasta imagens/ e ajuste o
+    nome dela no arquivo.
+
+Salve e atualize o navegador para ver o resultado.
+
+
+4) CONTINUAR COM UMA IA
+-----------------------
+Como o site inteiro está num arquivo só, qualquer IA consegue lê-lo
+por completo — o que dá resultado melhor do que um projeto espalhado
+em várias pastas.
+
+Abra o index.html num editor de texto, copie TUDO e cole no
+Cursor, ChatGPT ou Claude com um pedido do tipo:
+
+  "Este é o site de um cliente meu. Mantenha o layout e as cores e
+   [o que você quer mudar]."
+
+Na plataforma da Valy OS também há o botão "Copiar prompt", que
+entrega a descrição completa do projeto em texto — útil para começar
+do zero em outra ferramenta em vez de partir do HTML.
+
+
+5) ANTES DE PUBLICAR — IMPORTANTE
+---------------------------------
+A avaliação (ex.: 4,8), os números da faixa e os depoimentos deste
+site são EXEMPLOS, colocados para a página não nascer vazia.
+
+Combine os dados reais com o cliente e troque no index.html antes de
+colocar no ar. Publicar como está põe informação inventada no nome de
+um negócio de verdade — e quem responde por isso é você, não a
+plataforma.
+
+Os depoimentos ficam na seção de mesmo nome; os números, logo abaixo
+da primeira dobra.
+
+
+DÚVIDAS
+-------
+Suporte pela própria plataforma: valyos.com.br

@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica odontológica em Bauru, SP | Sorria Bauru - Clinica Odontologica em Bauru</title>
+<meta name="description" content="Sorria Bauru - Clinica Odontologica em Bauru em Bauru, SP. No Sorria Bauru - Clinica Odontologica em Bauru a primeira etapa é entender o seu caso. Você sabe o que precisa ser feito, quanto tempo leva e quanto custa antes de decidir qualquer coisa.">
+
+<!-- PRÉVIA AO COMPARTILHAR
+     Sem estas linhas, o link colado no WhatsApp chega como um
+     retângulo cinza. Com elas, chega com a foto de capa, o nome do
+     negócio e a frase de venda — que é o que faz o dono abrir. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Clínica odontológica em Bauru, SP | Sorria Bauru - Clinica Odontologica em Bauru">
+<meta property="og:description" content="No Sorria Bauru - Clinica Odontologica em Bauru a primeira etapa é entender o seu caso. Você sabe o que precisa ser feito, quanto tempo leva e quanto custa antes de decidir qualquer coisa.">
+<meta property="og:image" content="https://cdowco9uebrdby23.public.blob.vercel-storage.com/instagram/e063dc42-bc1f-4437-bcea-21997685ebcc/sorriabauru/62653bd7ff2ca23d9db6b60a.webp">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Ícone da aba: a inicial do negócio na cor dele, desenhada em SVG
+     dentro do próprio arquivo. Um .ico separado quebraria a promessa
+     de arquivo único e sumiria assim que o cliente movesse o site. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231C7ED6'%2F%3E%3Ctext%20x%3D'32'%20y%3D'44'%20font-size%3D'34'%20font-family%3D'Georgia%2Cserif'%20font-weight%3D'bold'%20fill%3D'%23fff'%20text-anchor%3D'middle'%3ES%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --marca:#1C7ED6;
+    --marca-escura:#12528b;
+    --marca-fraca:#e8f2fb;
+    /* A COR DA MARCA QUANDO ELA VIRA TEXTO SOBRE O PAPEL.
+       Num tema claro é a marca mesma. Num tema escuro a marca do
+       cliente pode ser um azul-marinho: legível sobre branco e
+       invisível sobre carvão. Foi o que aconteceu no site de um
+       advogado — a linha "para quem é" sumia dentro do card escuro.
+       Nos blocos que já nascem escuros (topo, números, história) o
+       site sempre usou --marca-fraca; isto estende a mesma ideia ao
+       resto da página quando o papel inteiro escurece. */
+    /* Deixou de ser um "se escuro, clareia" e passou a ser medido:
+       marca cinzenta sobre card cinzento passava no teste antigo e
+       sumia na tela. Ver lib/site/contraste.ts. */
+    --marca-texto:#0b3051;
+    --tinta:#0C8599;
+    /* AS TINTAS MEDIDAS — ver lib/site/contraste.ts.
+       Toda superfície pintada com --marca ou --tinta lê a sua daqui,
+       em vez de cravar branco e torcer para o fundo ser escuro. */
+    --sobre-marca:#04121e;
+    --sobre-tinta:#000000;
+    --realce-tinta:#e8f2fb;
+    /* O botão da chamada final é o inverso da faixa: fundo na tinta
+       que se lê sobre a marca, texto na marca — a não ser que a marca
+       não contraste com esse fundo, e aí cai na tinta legível. */
+    --btn-invertido:#04121e;
+    --btn-invertido-texto:#1C7ED6;
+    --fundo:#ffffff;--suave:#f7f7f8;--cartao:#ffffff;--texto:#15171c;--apagado:#5f636b;--linha:#e6e7ea;--raio:18px;
+    --dock:78px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  /* MOBILE PRIMEIRO. Tudo fora de @media é a tela de 320–759px; o
+     bloco min-width:760 restaura o desktop. O celular ganha o rodapé
+     fixo (.dock) e o body reserva o espaço dele. */
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--texto);background:var(--fundo);line-height:1.6;font-size:16px;padding-bottom:var(--dock);overflow-x:clip}
+  h1,h2,h3{font-family:'Fraunces',system-ui,sans-serif;line-height:1.1;letter-spacing:-.025em;text-wrap:balance}
+  img{max-width:100%;display:block}
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 18px}
+  .tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--marca-texto);margin-bottom:12px}
+  .tag::before{content:"";width:18px;height:2px;border-radius:2px;background:var(--marca-texto);flex:0 0 auto}
+  .intro{color:var(--apagado);max-width:680px;margin-top:12px;font-size:1rem;line-height:1.6;text-wrap:pretty}
+  section{padding:60px 0}
+  h2{font-size:clamp(1.8rem,7.4vw,2.3rem)}
+
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--fundo) 88%,transparent);backdrop-filter:blur(12px) saturate(1.2);-webkit-backdrop-filter:blur(12px) saturate(1.2);border-bottom:1px solid var(--linha)}
+  .barra{display:flex;align-items:center;justify-content:space-between;gap:12px;height:60px}
+  .marca{display:flex;align-items:center;gap:10px;min-width:0;text-decoration:none;flex:1 1 auto}
+  /* Altura fixa e largura livre: logo horizontal ou quadrada cabe sem
+     esmagar. object-fit:contain para nunca cortar a marca do cliente. */
+  .logo-img{height:32px;width:auto;max-width:120px;object-fit:contain;flex:0 0 auto}
+  .logo{font-family:'Fraunces',sans-serif;font-weight:800;font-size:16px;color:var(--texto);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;letter-spacing:-.01em}
+  nav{display:none;gap:24px}
+  nav a{color:var(--apagado);text-decoration:none;font-size:14px;font-weight:500}
+  nav a:hover{color:var(--marca-texto)}
+  header .btn{min-height:40px;padding:0 16px;font-size:13px;flex:0 0 auto;box-shadow:none}
+  /* O botão carrega a cor escolhida pelo cliente, com um degradê leve e
+     sombra na própria cor — é o que faz ele parecer clicável em vez de
+     um retângulo chapado. 52px de altura: dedo, não cursor. */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    background:linear-gradient(180deg,var(--marca),var(--marca-escura));
+    color:var(--sobre-marca);text-decoration:none;font-weight:700;min-height:52px;padding:14px 24px;border-radius:999px;
+    font-size:15px;letter-spacing:.01em;white-space:nowrap;transition:transform .2s,box-shadow .2s;
+    box-shadow:0 12px 28px -12px var(--marca)}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 16px 32px -12px var(--marca)}
+  .btn:active{transform:translateY(0) scale(.99)}
+  .btn2{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.4);box-shadow:none;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+  .btn2:hover{background:rgba(255,255,255,.22);box-shadow:none}
+  .chamada .btn{background:var(--btn-invertido);color:var(--btn-invertido-texto);box-shadow:0 10px 26px -12px rgba(0,0,0,.5)}
+
+  /* TOPO: no celular a foto ocupa a tela e o texto assenta na base,
+     alinhado à esquerda — é como os sites de vitrine abrem. O véu
+     escurece de baixo para cima para o título ler sobre qualquer foto. */
+  .hero{position:relative;color:#fff;text-align:left;display:flex;align-items:flex-end;min-height:min(84svh,760px);padding:120px 0 40px}
+  /* A COR FICA DEBAIXO DA FOTO, SEMPRE.
+     Endereço de foto morre: o cliente apaga a imagem do Drive, o
+     Google troca o link da foto do Maps, o site de onde ela veio sai
+     do ar. Quando isso acontece com a capa, o topo virava um retângulo
+     vazio com o fundo da página aparecendo — foi o "fundo cinza sem
+     foto" relatado em 17/09/2026. Com a cor no mesmo atalho, a foto
+     que não abre deixa para trás o topo em cor sólida, que é o mesmo
+     resultado de quem nunca pôs foto nenhuma. */
+  .hero::before{content:"";position:absolute;inset:0;background:var(--tinta) url('imagens/13.webp') 50% 50% / cover}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.30) 0%,rgba(0,0,0,.28) 35%,rgba(0,0,0,.84) 100%)}
+  .hero .wrap{position:relative;z-index:2}
+  .hero .tag{color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:7px 12px 7px 10px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);margin-bottom:16px}
+  .hero .tag::before{width:6px;height:6px;border-radius:50%;background:var(--marca-fraca)}
+  .hero h1{font-size:clamp(2.25rem,9.6vw,3.6rem);line-height:1.02;letter-spacing:-.035em;margin-bottom:14px;max-width:900px}
+  .hero p.sub{font-size:1.02rem;line-height:1.55;max-width:36ch;margin:0 0 22px;opacity:.9;text-wrap:pretty}
+  .acoes{display:flex;flex-direction:column;gap:10px}
+  .acoes .btn{width:100%}
+  .fatos{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .fatos span{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(255,255,255,.08);font-size:.8rem;font-weight:500;line-height:1.2}
+  .fatos span::before{content:"✓";color:var(--marca-fraca);font-weight:800;font-size:.8rem}
+
+  /* NÚMEROS: uma grade 2×2 com fios finos, cada valor grande na cor
+     clara da marca. */
+  .numeros{background:var(--tinta);color:var(--sobre-tinta);padding:0}
+  /* Uma faixa só, os quatro lado a lado — também no celular (decisão
+     do dono, 16/09). Valor em clamp para "+1.500" caber em 320px. */
+  .grade-n{display:grid;grid-template-columns:repeat(4,1fr);gap:0;text-align:center}
+  .n{padding:22px 4px 18px;border-left:1px solid rgba(255,255,255,.1)}
+  .n:first-child{border-left:0}
+  .n b{font-family:'Fraunces',sans-serif;display:block;font-size:clamp(1.25rem,5.6vw,2.1rem);font-weight:800;line-height:1;letter-spacing:-.03em;color:var(--realce-tinta);font-variant-numeric:tabular-nums}
+  .n span{display:block;margin-top:8px;font-size:.56rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;opacity:.62;line-height:1.25;text-wrap:balance}
+
+  .grade{display:grid;gap:16px;grid-template-columns:1fr;margin-top:30px}
+  .item{background:var(--cartao);border:1px solid var(--linha);border-radius:var(--raio);overflow:hidden;transition:.2s;box-shadow:0 14px 34px -26px rgba(0,0,0,.45)}
+  .item:hover{transform:translateY(-3px);box-shadow:0 18px 44px -24px rgba(0,0,0,.45)}
+  .item img{width:100%;height:212px;object-fit:cover}
+  .item-txt{padding:18px 18px 22px}
+  .item h3{font-size:1.2rem;margin-bottom:6px}
+  .item .pq{color:var(--marca-texto);font-size:.86rem;font-weight:600;margin-bottom:8px;line-height:1.45}
+  .item p{color:var(--apagado);font-size:.93rem;line-height:1.6}
+
+  .dif{background:var(--suave)}
+  .grade-d{display:grid;gap:12px;grid-template-columns:1fr;margin-top:30px;counter-reset:dif}
+  .d{background:var(--cartao);border:1px solid var(--linha);border-radius:var(--raio);padding:22px 20px}
+  .d::before{counter-increment:dif;content:counter(dif,decimal-leading-zero);display:block;font-size:.72rem;font-weight:700;letter-spacing:.16em;color:var(--marca-texto);margin-bottom:10px}
+  .d h3{font-size:1.1rem;margin-bottom:6px}
+  .d p{color:var(--apagado);font-size:.93rem;line-height:1.6}
+
+  .grade-p{display:grid;gap:14px;grid-template-columns:1fr;margin-top:30px;counter-reset:passo}
+  .p{position:relative;padding:4px 0 4px 56px}
+  .p::before{counter-increment:passo;content:counter(passo);position:absolute;left:0;top:2px;width:40px;height:40px;border-radius:50%;background:var(--marca);color:var(--sobre-marca);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.95rem;font-family:'Fraunces',sans-serif}
+  .p h3{font-size:1.1rem;margin-bottom:5px}
+  .p p{color:var(--apagado);font-size:.93rem;line-height:1.6}
+
+  .grid-fotos{display:grid;gap:10px;grid-template-columns:repeat(2,1fr);margin-top:26px}
+  .grid-fotos img{width:100%;height:150px;object-fit:cover;border-radius:14px}
+  .grid-fotos img:first-child{grid-column:span 2;height:230px}
+
+  .planos{background:var(--suave)}
+  .grade-pl{display:grid;gap:14px;grid-template-columns:1fr;margin-top:30px}
+  .pl{background:var(--cartao);border:1px solid var(--linha);border-radius:var(--raio);padding:24px 20px;display:flex;flex-direction:column}
+  .pl h3{font-size:1.25rem;margin-bottom:8px;color:var(--marca-texto)}
+  .pl .res{color:var(--apagado);font-size:.93rem;margin-bottom:16px;line-height:1.55}
+  .pl ul{list-style:none;margin-bottom:20px}
+  .pl li{color:var(--texto);font-size:.92rem;padding:9px 0 9px 24px;position:relative;border-top:1px solid var(--linha);line-height:1.45}
+  .pl li:first-child{border-top:0}
+  .pl li::before{content:"✓";position:absolute;left:0;top:9px;color:var(--marca-texto);font-weight:800}
+  .btn-pl{margin-top:auto;width:100%}
+
+  .faq{background:var(--suave)}
+  .perguntas{max-width:760px;margin:26px auto 0;display:grid;gap:10px}
+  details{background:var(--cartao);border:1px solid var(--linha);border-radius:var(--raio);padding:0 18px}
+  summary{cursor:pointer;font-weight:600;font-size:1rem;list-style:none;min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:14px;line-height:1.35}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--marca-texto);font-weight:700;font-size:1.3rem;flex:0 0 auto}
+  details[open] summary::after{content:"−"}
+  details p{margin:-4px 0 18px;color:var(--apagado);font-size:.93rem;line-height:1.6}
+
+  .historia{background:var(--tinta);color:var(--sobre-tinta)}
+  .historia .tag{color:var(--realce-tinta)}
+  .historia .tag::before{background:var(--marca-fraca)}
+  .historia p{opacity:.84;max-width:760px;margin-top:14px;font-size:1.02rem;line-height:1.65}
+
+  .grade-dep{display:grid;gap:14px;grid-template-columns:1fr;margin-top:30px}
+  .dep{background:var(--cartao);border:1px solid var(--linha);border-radius:var(--raio);padding:22px 20px}
+  .dep p{font-size:1.02rem;line-height:1.6;margin-bottom:16px}
+  .dep b{display:block;font-size:.9rem}
+  .dep span{color:var(--apagado);font-size:.8rem}
+
+  .mapa{margin-top:22px;border-radius:var(--raio);overflow:hidden;border:1px solid var(--linha)}
+  .mapa iframe{width:100%;height:260px;border:0;display:block}
+
+  .estrelas{color:#f5a623;letter-spacing:2px;margin-bottom:10px;font-size:.95rem}
+  .assina{display:flex;align-items:center;gap:10px}
+  .ini{width:38px;height:38px;border-radius:50%;background:var(--marca);color:var(--sobre-marca);display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0}
+  .dep em{display:block;font-style:normal;color:var(--apagado);font-size:.78rem}
+
+  .chamada{background:var(--marca);color:var(--sobre-marca);text-align:center;padding:64px 0}
+  .chamada h2{margin-bottom:10px}
+  .chamada p{opacity:.9;margin-bottom:24px;text-wrap:pretty}
+  .chamada .btn{background:var(--btn-invertido);color:var(--btn-invertido-texto);width:100%}
+
+  .contato .cols{display:grid;gap:12px;grid-template-columns:1fr;margin-top:26px}
+  .campo{border:1px solid var(--linha);border-radius:var(--raio);padding:18px 20px;background:var(--cartao)}
+  .campo h3{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--apagado);margin-bottom:6px;font-family:'Inter',sans-serif;font-weight:700}
+  .campo p,.campo a{color:var(--texto);font-size:1rem;text-decoration:none;font-weight:500}
+
+  footer{background:var(--tinta);color:color-mix(in srgb,var(--sobre-tinta) 62%,transparent);text-align:center;padding:30px 0;font-size:.84rem}
+
+  /* CONTATO SEMPRE À MÃO. No celular, uma barra fixa embaixo com o botão
+     inteiro (safe-area do iPhone respeitada) no lugar da pílula
+     flutuante, que cobria texto e botão dos cards. No desktop a pílula
+     volta e a barra some. */
+  .zap{display:none;position:fixed;right:18px;bottom:18px;z-index:30;background:#25d366;color:#fff;border-radius:999px;padding:14px 20px;font-weight:600;text-decoration:none;box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+  .dock{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--fundo) 90%,transparent);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);border-top:1px solid var(--linha)}
+  .dock .btn{flex:1 1 auto;min-height:50px}
+  .dock .btn svg{width:18px;height:18px;flex:0 0 auto}
+
+  @media(min-width:760px){
+    body{padding-bottom:0}
+    .dock{display:none}
+    .zap{display:inline-flex}
+    nav{display:flex}
+    .logo{font-size:19px}
+    .logo-img{height:40px;max-width:180px}
+    .barra{height:68px}
+    header .btn{min-height:44px;padding:0 22px;font-size:14px}
+    section{padding:96px 0}
+    h2{font-size:clamp(1.8rem,3.6vw,2.4rem)}
+    .hero{text-align:center;display:block;min-height:0;padding:104px 0 88px}
+    .hero::after{background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,.78))}
+    .hero h1{font-size:clamp(2.6rem,5.4vw,3.7rem);margin-inline:auto}
+    .hero p.sub{font-size:1.15rem;max-width:660px;margin:0 auto 28px}
+    .acoes{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:12px}
+    .acoes .btn{width:auto}
+    .fatos{justify-content:center;margin-top:30px}
+    .numeros{padding:48px 0}
+    .grade-n{grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+    .n{padding:0;border:0!important}
+    .n b{font-size:clamp(3.2rem,4vw,4.4rem)}
+    .n span{margin-top:10px;font-size:.72rem;letter-spacing:.12em}
+    .grade{grid-template-columns:repeat(3,1fr);gap:18px}
+    .item img{height:200px}
+    .grade-d{grid-template-columns:repeat(3,1fr);gap:16px}
+    .grade-p{grid-template-columns:repeat(3,1fr);gap:22px}
+    .p{padding:58px 0 0}
+    .p::before{top:0}
+    .grid-fotos{grid-template-columns:repeat(3,1fr);gap:12px}
+    .grid-fotos img,.grid-fotos img:first-child{height:220px;grid-column:auto}
+    .grade-dep{grid-template-columns:repeat(3,1fr);gap:16px}
+    .grade-pl{grid-template-columns:repeat(3,1fr);gap:16px}
+    .chamada{padding:96px 0}
+    .chamada .btn{width:auto}
+    .contato .cols{grid-template-columns:repeat(3,1fr);gap:16px}
+    .mapa iframe{height:300px}
+  }
+  @media(max-width:359px){
+    header .btn{padding:0 12px;font-size:12px}
+    .hero h1{font-size:2.05rem}
+  }
+
+  mark.dst{background:none;color:var(--dst,var(--marca));font-weight:inherit}
+  .hero mark.dst{color:var(--dst,var(--marca-fraca))}
+  .midia{margin:26px auto 0;max-width:920px;border-radius:var(--raio);overflow:hidden;background:var(--suave)}
+  .midia img,.midia video{width:100%;display:block}
+  .midia-video{position:relative;aspect-ratio:16/9}
+  .midia-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .midia figcaption{padding:10px 14px;font-size:.82rem;color:var(--apagado)}
+  .midia + .grade,.midia + .grade-d,.midia + .grade-p,.midia + .grade-pl{margin-top:26px}
+  .bloco-ctas{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+  section[data-estilo~="centrado"] .wrap{text-align:center}
+  section[data-estilo~="centrado"] .bloco-ctas{justify-content:center}
+  section[data-estilo~="a-direita"] .wrap{text-align:right}
+  section[data-estilo~="a-direita"] .bloco-ctas{justify-content:flex-end}
+  /* "ESQUERDA" PRECISA DE REGRA PRÓPRIA, e essa é a parte que não é
+     óbvia: no computador o motor já manda .hero com text-align:center.
+     Enquanto "esquerda" era só a ausência de classe, clicar nela não
+     mudava nada no computador — o alinhamento padrão do bloco vencia.
+     Pedir para mover o texto e ver a tela imóvel é o defeito que esta
+     linha corrige. */
+  section[data-estilo~="a-esquerda"] .wrap{text-align:left}
+  section[data-estilo~="a-esquerda"] .bloco-ctas{justify-content:flex-start}
+  /* ALINHAR O TEXTO DO TOPO NÃO É SÓ text-align.
+     O h1 e o subtítulo têm largura máxima própria (900px e 36ch) para
+     não virarem uma linha de ponta a ponta da tela. Sem mexer nas
+     margens, alinhar mudava o texto DENTRO de um bloco que continuava
+     no mesmo lugar — e a pessoa via quase nada acontecer. */
+  section.hero[data-estilo~="a-esquerda"] h1,
+  section.hero[data-estilo~="a-esquerda"] p.sub{margin-left:0;margin-right:auto}
+  section.hero[data-estilo~="a-esquerda"] .acoes,
+  section.hero[data-estilo~="a-esquerda"] .fatos{justify-content:flex-start}
+  section.hero[data-estilo~="centrado"] h1,
+  section.hero[data-estilo~="centrado"] p.sub{margin-left:auto;margin-right:auto}
+  section.hero[data-estilo~="centrado"] .acoes,
+  section.hero[data-estilo~="centrado"] .fatos{justify-content:center}
+  section.hero[data-estilo~="a-direita"] h1,
+  section.hero[data-estilo~="a-direita"] p.sub{margin-left:auto;margin-right:0}
+  section.hero[data-estilo~="a-direita"] .acoes,
+  section.hero[data-estilo~="a-direita"] .fatos{justify-content:flex-end}
+  /* ALTURA DO TEXTO NO TOPO.
+     No celular o topo já é uma coluna de 84svh com o texto assentado
+     na base — mover na vertical é trocar o align-items.
+
+     No computador o topo é um bloco com respiro em cima e embaixo:
+     não existe altura sobrando para o texto ocupar. Por isso a altura
+     só nasce QUANDO a pessoa escolhe uma posição — nenhum site que
+     nunca tocou neste controle muda de aparência por causa dele. */
+  section.hero[data-estilo~="v-topo"]{align-items:flex-start}
+  section.hero[data-estilo~="v-meio"]{align-items:center}
+  section.hero[data-estilo~="v-base"]{align-items:flex-end}
+  @media(min-width:760px){
+    section.hero[data-estilo~="v-topo"],
+    section.hero[data-estilo~="v-meio"],
+    section.hero[data-estilo~="v-base"]{display:flex;min-height:min(78svh,700px)}
+    section.hero[data-estilo~="v-topo"] .wrap,
+    section.hero[data-estilo~="v-meio"] .wrap,
+    section.hero[data-estilo~="v-base"] .wrap{width:100%}
+  }
+  section[data-estilo~="tit-pp"] h1,section[data-estilo~="tit-pp"] h2{font-size:1.4rem}
+  section[data-estilo~="tit-p"] h1,section[data-estilo~="tit-p"] h2{font-size:1.7rem}
+  section[data-estilo~="tit-m"] h1,section[data-estilo~="tit-m"] h2{font-size:2.1rem}
+  section[data-estilo~="tit-g"] h1,section[data-estilo~="tit-g"] h2{font-size:2.6rem}
+  section[data-estilo~="tit-xg"] h1,section[data-estilo~="tit-xg"] h2{font-size:3.2rem}
+  /* O topo é h1: sem esta linha o "XG" mudava as seções e deixava o
+     título do hero do mesmo tamanho. E os dois maiores encolhem no
+     celular, onde 3,2rem numa tela de 390px vira uma palavra por linha. */
+  section.hero[data-estilo~="tit-g"] h1{font-size:clamp(2.2rem,6vw,3.4rem)}
+  section.hero[data-estilo~="tit-xg"] h1{font-size:clamp(2.4rem,7vw,4.2rem)}
+  @media(max-width:700px){
+    section[data-estilo~="tit-g"] h2{font-size:2.1rem}
+    section[data-estilo~="tit-xg"] h2{font-size:2.4rem}
+  }
+  section[style*="--sec-fundo"]{background:var(--sec-fundo)!important}
+  /* Cor de texto do bloco: vale para tudo que está dentro dele —
+     título, parágrafo, card, pergunta. O :where mantém especificidade
+     zero, então a cor da marca no .tag e no .pq continua vencendo. */
+  section[style*="--sec-texto"]{color:var(--sec-texto)!important}
+  section[style*="--sec-texto"] :where(h1,h2,h3,p,li,summary,b,em,span:not(.tag):not(.pq):not(.preco)){color:inherit}
+  section[data-estilo~="esp-compacto"]{padding-top:36px!important;padding-bottom:36px!important}
+  section[data-estilo~="esp-amplo"]{padding-top:130px!important;padding-bottom:130px!important}
+  @media(max-width:700px){section[data-estilo~="esp-amplo"]{padding-top:96px!important;padding-bottom:96px!important}}
+  @media(min-width:900px){
+    section[style*="--sec-cols"] .grade,section[style*="--sec-cols"] .grade-d,section[style*="--sec-cols"] .grade-p,section[style*="--sec-cols"] .grade-pl{grid-template-columns:repeat(var(--sec-cols),1fr)!important}
+  }
+  .preco{display:inline-block;margin-top:10px;padding:5px 11px;border-radius:999px;background:var(--marca);color:#fff;font-weight:700;font-size:.85rem;letter-spacing:.01em}
+  .cta-pulsar{animation:cta-pulsar 2.2s ease-in-out infinite}
+  @keyframes cta-pulsar{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--marca) 45%,transparent)}50%{box-shadow:0 0 0 10px transparent}}
+  .cta-brilho{position:relative;overflow:hidden}
+  .cta-brilho::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-100%);animation:cta-brilho 2.6s ease-in-out infinite}
+  @keyframes cta-brilho{to{transform:translateX(100%)}}
+  @media (prefers-reduced-motion:reduce){.cta-pulsar,.cta-brilho::after{animation:none}}
+
+</style>
+<style id="valy-motion">
+/* :where() zera a especificidade do prefixo de propósito. MEDIDO: com
+   ".vm-tx .vm-tx-el.vm-in{transform:none}" a revelação vencia a seção
+   sticky no título do topo, e o título parava de crescer ao rolar.
+   Com :where, quem manda no hero é o motion que o embrulha; a
+   revelação continua cuidando do resto da página. */
+:where(.vm-tx) .vm-tx-el{opacity:0;transform:translateY(calc(18px * var(--vm-f,1)));transition:opacity var(--vm-dur,720ms) cubic-bezier(.22,1,.36,1),transform var(--vm-dur,720ms) cubic-bezier(.22,1,.36,1);transition-delay:var(--vm-d,0ms);will-change:opacity,transform}
+:where(.vm-tx) .vm-tx-el.vm-in{opacity:1;transform:none}
+/* Dentro do trilho sticky, o hero é do sticky: sem esconder nem
+   transformar por aqui. */
+.vm-st-trilho .vm-tx-el{opacity:1;transform:none;transition:none}
+/* A palavra: um span inline-block para o translateY funcionar. */
+.vm-tx .vm-tx-w{display:inline-block;opacity:0;transform:translateY(.45em);transition:opacity calc(var(--vm-dur,720ms) * .8) cubic-bezier(.22,1,.36,1),transform calc(var(--vm-dur,720ms) * .8) cubic-bezier(.22,1,.36,1);transition-delay:var(--vm-d,0ms)}
+.vm-tx .vm-in .vm-tx-w{opacity:1;transform:none}
+/* A etiqueta ganha um risco na cor do motion, que cresce ao entrar. */
+.vm-tx section > .wrap > .tag{position:relative;padding-left:18px}
+.vm-tx section > .wrap > .tag::before{content:"";position:absolute;left:0;top:50%;height:2px;width:0;background:var(--vm-cor,var(--marca));transition:width var(--vm-dur,720ms) ease .1s}
+.vm-tx section > .wrap > .tag.vm-in::before{width:12px}
+@media (prefers-reduced-motion:reduce){
+  .vm-tx .vm-tx-el,.vm-tx .vm-tx-w{opacity:1!important;transform:none!important;transition:none!important}
+  .vm-tx section > .wrap > .tag::before{width:12px}
+}
+
+
+.vm-im .vm-im-card{opacity:0;transform:translateY(calc(28px * var(--vm-f,1))) scale(.985);transition:opacity var(--vm-dur,720ms) cubic-bezier(.22,1,.36,1),transform var(--vm-dur,720ms) cubic-bezier(.22,1,.36,1);transition-delay:calc(var(--vm-i,0) * var(--vm-passo,80ms));will-change:opacity,transform}
+.vm-im .vm-im-card.vm-in{opacity:1;transform:none}
+/* A foto se revela de baixo para cima dentro da moldura. */
+.vm-im .vm-im-card img{clip-path:inset(100% 0 0 0);transition:clip-path calc(var(--vm-dur,720ms) * 1.1) cubic-bezier(.22,1,.36,1) calc(var(--vm-i,0) * var(--vm-passo,80ms) + 120ms),transform .5s cubic-bezier(.22,1,.36,1)}
+.vm-im .vm-im-card.vm-in img{clip-path:inset(0 0 0 0)}
+/* Reação ao mouse, só onde existe mouse. */
+.vm-im .item,.vm-im .d,.vm-im .p,.vm-im .pl,.vm-im .dep{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+@media (hover:hover){
+  .vm-im .item:hover,.vm-im .d:hover,.vm-im .p:hover,.vm-im .pl:hover,.vm-im .dep:hover{transform:translateY(-3px);box-shadow:0 16px 36px -18px rgba(0,0,0,.35);border-color:color-mix(in srgb,var(--vm-cor,var(--marca)) 45%,transparent)}
+  .vm-im .item:hover img{transform:scale(1.04)}
+}
+@media (prefers-reduced-motion:reduce){
+  .vm-im .vm-im-card{opacity:1!important;transform:none!important;transition:none!important}
+  .vm-im .vm-im-card img{clip-path:none!important;transition:none!important}
+}
+
+
+.vm-fr .vm-fr-sec{position:relative;isolation:isolate;overflow-x:clip}
+.vm-fr .vm-fr-m{position:absolute;z-index:-1;border-radius:50%;pointer-events:none;filter:blur(calc(46px * var(--vm-f,1)));opacity:calc(.55 * var(--vm-f,1));will-change:transform;width:56vw;max-width:680px;aspect-ratio:1}
+.vm-fr .vm-fr-m1{top:-22%;right:-16%;background:radial-gradient(circle,color-mix(in srgb,var(--vm-cor,var(--marca)) 30%,transparent) 0%,transparent 66%)}
+.vm-fr .vm-fr-m2{bottom:-26%;left:-14%;background:radial-gradient(circle,color-mix(in srgb,var(--vm-cor,var(--marca)) 18%,transparent) 0%,transparent 66%)}
+.vm-fr .vm-fr-sec::after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(0,0,0,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.035) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 50%,#000 10%,transparent 70%);pointer-events:none}
+.vm-fr-barra{position:fixed;top:0;left:0;height:3px;width:0;background:var(--vm-cor,var(--marca));z-index:99;pointer-events:none;transition:width .12s linear}
+@media (prefers-reduced-motion:reduce){
+  .vm-fr .vm-fr-m{transform:none!important}
+  .vm-fr-barra{display:none}
+}
+</style>
+</head>
+<body>
+
+<header data-bloco="cabecalho" data-bloco-nome="Cabeçalho">
+  <div class="wrap barra">
+    <a class="marca" href="#">
+      
+      <span class="logo" data-valy="marcaNome">Sorria Bauru - Clinica Odontologica em Bauru</span>
+    </a>
+    <nav>
+      <a href="#itens" data-valy="navItens">Tratamentos</a>
+      <a href="#diferenciais" data-valy="navDiferenciais">Diferenciais</a>
+      <a href="#planos" data-valy="navPlanos">Como funciona o pagamento</a>
+      <a href="#estrutura" data-valy="navEstrutura">Estrutura</a>
+      <a href="#faq" data-valy="navFaq">Perguntas</a>
+      <a href="#contato" data-valy="navContato">Contato</a>
+    </nav>
+    <a class="btn" href="https://wa.me/5514991879814">Agendar avaliação</a>
+  </div>
+</header>
+
+
+
+
+<section class="hero" data-bloco="hero" data-bloco-nome="Topo" data-foto="capa">
+  <div class="wrap">
+    <span class="tag" data-valy="heroEyebrow">Bauru, SP</span>
+    <h1 data-valy="heroTitulo">Atendimento explicado antes de começar</h1>
+    <p class="sub" data-valy="heroSubtitulo">No Sorria Bauru - Clinica Odontologica em Bauru a primeira etapa é entender o seu caso. Você sabe o que precisa ser feito, quanto tempo leva e quanto custa antes de decidir qualquer coisa.</p>
+    <div class="acoes">
+      <a class="btn" href="https://wa.me/5514991879814" data-valy="heroBotao">Agendar avaliação</a>
+      <a class="btn btn2" href="#itens" data-valy="heroBotao2">Ver tratamentos</a>
+    </div>
+    <div class="fatos">
+      <span data-lista="fatos" data-i="0" data-campo="texto">Avaliação sem compromisso</span>
+      <span data-lista="fatos" data-i="1" data-campo="texto">Atendimento com hora marcada em Bauru, SP</span>
+      <span data-lista="fatos" data-i="2" data-campo="texto">Pix, cartão e parcelamento</span>
+    </div>
+    
+  </div>
+</section>
+
+<section class="numeros" data-bloco="numeros" data-bloco-nome="Números">
+  <div class="wrap grade-n">
+    <div class="n" data-lista="numeros" data-i="0"><b data-campo="valor">Grátis</b><span data-campo="rotulo">Primeira avaliação</span></div>
+    <div class="n" data-lista="numeros" data-i="1"><b data-campo="valor">4,9</b><span data-campo="rotulo">Avaliação dos pacientes</span></div>
+    <div class="n" data-lista="numeros" data-i="2"><b data-campo="valor">+800</b><span data-campo="rotulo">Pacientes atendidos</span></div>
+    <div class="n" data-lista="numeros" data-i="3"><b data-campo="valor">6 dias</b><span data-campo="rotulo">Aberto por semana</span></div>
+    
+  </div>
+</section>
+
+<section class="itens" id="itens" data-bloco="itens" data-bloco-nome="Tratamentos">
+  <div class="wrap">
+    <span class="tag" data-valy="itensTag">Tratamentos</span>
+    <h2 data-valy="itensTitulo">O que atendemos, do incômodo ao plano</h2>
+    <p class="intro" data-valy="itensIntro">Cada caso começa pela avaliação, que é onde entendemos o que está acontecendo e montamos o plano. Só depois disso falamos de procedimento, prazo e valor.</p>
+    
+    <div class="grade">
+      <article class="item" data-item="0" data-lista="itens" data-i="0">
+        <img src="imagens/01.webp" alt="Clínico geral" loading="lazy" data-foto="item:0">
+        <div class="item-txt">
+          <h3 data-campo="nome">Clínico geral</h3>
+          <p class="pq" data-campo="paraQuem">Para quem precisa cuidar do básico, manter em dia e evitar que um problema pequeno se transforme em tratamento longo e caro.</p>
+          <p data-campo="texto">Consulta de avaliação, limpeza, restauração e orientação de higiene adaptada à sua rotina. É o atendimento que resolve a maior parte das queixas e o que mais evita retorno de urgência lá na frente. Você sai sabendo o que está bem e o que precisa de atenção.</p>
+          
+        </div>
+      </article>
+      <article class="item" data-item="1" data-lista="itens" data-i="1">
+        <img src="imagens/02.webp" alt="Ortodontia" loading="lazy" data-foto="item:1">
+        <div class="item-txt">
+          <h3 data-campo="nome">Ortodontia</h3>
+          <p class="pq" data-campo="paraQuem">Para quem quer corrigir a posição dos dentes e já ouviu que ia demorar anos sem nunca receber um prazo real.</p>
+          <p data-campo="texto">Avaliação do caso com exames, plano de tratamento com etapas definidas e acompanhamento periódico dos ajustes. Você recebe a estimativa de tempo e de valor por escrito antes de começar, e sabe em que fase está a cada retorno.</p>
+          
+        </div>
+      </article>
+      <article class="item" data-item="2" data-lista="itens" data-i="2">
+        <img src="imagens/03.webp" alt="Implantes" loading="lazy" data-foto="item:2">
+        <div class="item-txt">
+          <h3 data-campo="nome">Implantes</h3>
+          <p class="pq" data-campo="paraQuem">Para quem perdeu um dente, evitou resolver por medo do procedimento ou do custo, e quer entender de verdade como funciona.</p>
+          <p data-campo="texto">Avaliação com exame de imagem, planejamento do procedimento e acompanhamento em cada etapa até a colocação da prótese. Cada fase é explicada antes de acontecer, incluindo o tempo de espera entre elas, que é a parte que mais gera dúvida.</p>
+          
+        </div>
+      </article>
+      <article class="item" data-item="3" data-lista="itens" data-i="3">
+        <img src="imagens/04.webp" alt="Estética dental" loading="lazy" data-foto="item:3">
+        <div class="item-txt">
+          <h3 data-campo="nome">Estética dental</h3>
+          <p class="pq" data-campo="paraQuem">Para quem quer melhorar a aparência do sorriso mas tem receio de sair com um resultado artificial demais.</p>
+          <p data-campo="texto">Clareamento, facetas e ajustes de forma e cor, sempre com simulação do resultado antes de qualquer aplicação. Você vê o que dá para alcançar no seu caso e decide com essa informação na mão, sem descobrir o resultado só no fim.</p>
+          
+        </div>
+      </article>
+      <article class="item" data-item="4" data-lista="itens" data-i="4">
+        <img src="imagens/05.webp" alt="Odontopediatria" loading="lazy" data-foto="item:4">
+        <div class="item-txt">
+          <h3 data-campo="nome">Odontopediatria</h3>
+          <p class="pq" data-campo="paraQuem">Para as crianças que precisam criar uma boa relação com o dentista, e para os pais que querem evitar o trauma que eles mesmos tiveram.</p>
+          <p data-campo="texto">Atendimento com linguagem e ritmo adequados à idade, em consultas mais curtas para respeitar o limite da criança. O foco é prevenir e fazer ela se sentir à vontade na cadeira, mesmo que a primeira visita seja só para conhecer o consultório.</p>
+          
+        </div>
+      </article>
+      <article class="item" data-item="5" data-lista="itens" data-i="5">
+        <img src="imagens/06.webp" alt="Urgência" loading="lazy" data-foto="item:5">
+        <div class="item-txt">
+          <h3 data-campo="nome">Urgência</h3>
+          <p class="pq" data-campo="paraQuem">Para a dor que apareceu no fim de semana ou no meio da noite e não dá para esperar a próxima consulta marcada.</p>
+          <p data-campo="texto">Encaixe na agenda para avaliar e aliviar o quadro o quanto antes, com o tratamento definitivo agendado em seguida. Mande uma mensagem descrevendo o que está sentindo e há quanto tempo, que já organizamos o atendimento.</p>
+          
+        </div>
+      </article>
+    </div>
+    
+  </div>
+</section>
+
+<section class="dif" id="diferenciais" data-bloco="diferenciais" data-bloco-nome="Compromissos">
+  <div class="wrap">
+    <span class="tag" data-valy="difTag">Compromissos</span>
+    <h2 data-valy="difTitulo">O que o paciente consegue conferir</h2>
+    <p class="intro" data-valy="difIntro">Não são promessas, são coisas verificáveis no dia a dia do atendimento: o que é explicado, o que é registrado e o que é combinado antes de acontecer.</p>
+    
+    <div class="grade-d">
+      <div class="d" data-lista="diferenciais" data-i="0"><h3 data-campo="titulo">Avaliação primeiro</h3><p data-campo="texto">Nada começa sem entender o caso. A avaliação é o passo inicial de todo tratamento.</p></div>
+      <div class="d" data-lista="diferenciais" data-i="1"><h3 data-campo="titulo">Plano por escrito</h3><p data-campo="texto">Você sai com as etapas, os prazos e os valores registrados, para consultar depois.</p></div>
+      <div class="d" data-lista="diferenciais" data-i="2"><h3 data-campo="titulo">Explicação sem jargão</h3><p data-campo="texto">Termo técnico traduzido. Se ficou dúvida, a gente explica de novo, de outro jeito.</p></div>
+      <div class="d" data-lista="diferenciais" data-i="3"><h3 data-campo="titulo">Hora marcada</h3><p data-campo="texto">A agenda tem intervalo entre atendimentos, então você não espera além do combinado.</p></div>
+      <div class="d" data-lista="diferenciais" data-i="4"><h3 data-campo="titulo">Ambiente preparado</h3><p data-campo="texto">Estrutura limpa e material esterilizado, com protocolo seguido a cada atendimento.</p></div>
+      <div class="d" data-lista="diferenciais" data-i="5"><h3 data-campo="titulo">Retorno acompanhado</h3><p data-campo="texto">Terminado o tratamento, marcamos o retorno para conferir o resultado.</p></div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="passos" data-bloco="passos" data-bloco-nome="Como funciona">
+  <div class="wrap">
+    <span class="tag" data-valy="passosTag">Como funciona</span>
+    <h2 data-valy="passosTitulo">Como é a sua primeira visita</h2>
+    <p class="intro" data-valy="passosIntro">A primeira consulta é de escuta e avaliação. Ninguém sai de lá com procedimento feito sem ter entendido e concordado.</p>
+    
+    <div class="grade-p">
+      <div class="p" data-lista="passos" data-i="0"><h3 data-campo="titulo">Você conta o que sente</h3><p data-campo="texto">A conversa começa pelo motivo que te trouxe aqui, sem pressa e sem interrupção.</p></div>
+      <div class="p" data-lista="passos" data-i="1"><h3 data-campo="titulo">Avaliamos e explicamos</h3><p data-campo="texto">Fazemos o exame, mostramos o que encontramos e explicamos as opções de tratamento.</p></div>
+      <div class="p" data-lista="passos" data-i="2"><h3 data-campo="titulo">Você decide com o plano na mão</h3><p data-campo="texto">Recebe as etapas, o prazo e o valor por escrito, e decide quando quiser começar.</p></div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="planos" id="planos" data-bloco="planos" data-bloco-nome="Como funciona o pagamento">
+  <div class="wrap">
+    <span class="tag" data-valy="planosTag">Como funciona o pagamento</span>
+    <h2 data-valy="planosTitulo">Três formas de conduzir o tratamento</h2>
+    <p class="intro" data-valy="planosIntro">O plano é definido na avaliação, junto com você. O que muda entre as opções é a forma de pagar e o ritmo das etapas, não a qualidade do que é feito.</p>
+    
+    <div class="grade-pl">
+      <div class="pl" data-lista="planos" data-i="0">
+        <h3 data-campo="nome">Avaliação</h3>
+        <p class="res" data-campo="resumo">O primeiro passo, em que entendemos o caso e montamos o plano.</p>
+        <ul data-campo="inclui" data-multi>
+          <li>Sem custo e sem compromisso</li>
+          <li>Plano por escrito</li>
+          <li>Orçamento detalhado</li>
+        </ul>
+        <a class="btn btn-pl" href="https://wa.me/5514991879814">Falar no WhatsApp</a>
+      </div>
+      <div class="pl" data-lista="planos" data-i="1">
+        <h3 data-campo="nome">Tratamento à vista</h3>
+        <p class="res" data-campo="resumo">Para quem quer resolver de uma vez e aproveitar a melhor condição.</p>
+        <ul data-campo="inclui" data-multi>
+          <li>Melhor valor total</li>
+          <li>Etapas agendadas de uma vez</li>
+          <li>Retorno incluso</li>
+        </ul>
+        <a class="btn btn-pl" href="https://wa.me/5514991879814">Falar no WhatsApp</a>
+      </div>
+      <div class="pl" data-lista="planos" data-i="2">
+        <h3 data-campo="nome">Tratamento parcelado</h3>
+        <p class="res" data-campo="resumo">Para dividir o investimento ao longo das etapas do tratamento.</p>
+        <ul data-campo="inclui" data-multi>
+          <li>Parcelamento combinado</li>
+          <li>Etapas conforme o pagamento</li>
+          <li>Sem alteração no plano clínico</li>
+        </ul>
+        <a class="btn btn-pl" href="https://wa.me/5514991879814">Falar no WhatsApp</a>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="estrutura" id="estrutura" data-bloco="estrutura" data-bloco-nome="Estrutura">
+  <div class="wrap">
+    <span class="tag">Estrutura</span>
+    <h2>O espaço em Bauru, SP, sem foto de catálogo</h2>
+    <p class="intro">O Sorria Bauru - Clinica Odontologica em Bauru tem sala de atendimento preparada para cada procedimento, recepção com espera curta e protocolo de esterilização seguido entre pacientes. Nada aqui é montado para foto: é o espaço em que o atendimento acontece todos os dias.</p>
+    <div class="grid-fotos">
+      <img src="imagens/07.webp" alt="Sorria Bauru - Clinica Odontologica em Bauru" loading="lazy" data-foto="galeria:0">
+      <img src="imagens/08.webp" alt="Sorria Bauru - Clinica Odontologica em Bauru" loading="lazy" data-foto="galeria:1">
+      <img src="imagens/09.webp" alt="Sorria Bauru - Clinica Odontologica em Bauru" loading="lazy" data-foto="galeria:2">
+      <img src="imagens/10.webp" alt="Sorria Bauru - Clinica Odontologica em Bauru" loading="lazy" data-foto="galeria:3">
+      <img src="imagens/11.webp" alt="Sorria Bauru - Clinica Odontologica em Bauru" loading="lazy" data-foto="galeria:4">
+      <img src="imagens/12.webp" alt="Sorria Bauru - Clinica Odontologica em Bauru" loading="lazy" data-foto="galeria:5">
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq" data-bloco="faq" data-bloco-nome="Perguntas frequentes">
+  <div class="wrap">
+    <span class="tag" data-valy="faqTag">Perguntas frequentes</span>
+    <h2 data-valy="faqTitulo">As dúvidas que chegam antes de marcar</h2>
+    
+    <div class="perguntas">
+      <details data-lista="faq" data-i="0"><summary data-campo="pergunta">A avaliação é cobrada?</summary><p data-campo="resposta">Não. A primeira avaliação é sem compromisso — é nela que entendemos o seu caso e montamos o plano.</p></details>
+      <details data-lista="faq" data-i="1"><summary data-campo="pergunta">Vocês atendem convênio?</summary><p data-campo="resposta">Mande uma mensagem no WhatsApp informando o seu convênio que confirmamos na hora.</p></details>
+      <details data-lista="faq" data-i="2"><summary data-campo="pergunta">Quanto custa o tratamento?</summary><p data-campo="resposta">Depende do caso, e é por isso que a avaliação vem primeiro. Com ela passamos o valor exato, por escrito.</p></details>
+      <details data-lista="faq" data-i="3"><summary data-campo="pergunta">Dá para parcelar?</summary><p data-campo="resposta">Dá. As formas de pagamento e o parcelamento são combinados junto com o plano de tratamento.</p></details>
+      <details data-lista="faq" data-i="4"><summary data-campo="pergunta">Quanto tempo demora o tratamento?</summary><p data-campo="resposta">Varia conforme o caso. O prazo estimado faz parte do plano que você recebe na avaliação.</p></details>
+      <details data-lista="faq" data-i="5"><summary data-campo="pergunta">Atendem urgência?</summary><p data-campo="resposta">Mande uma mensagem descrevendo o que está sentindo. A gente encaixa o quanto antes.</p></details>
+    </div>
+    
+  </div>
+</section>
+
+<section class="historia" data-bloco="historia" data-bloco-nome="Nossa história">
+  <div class="wrap">
+    <span class="tag" data-valy="historiaTag">Nossa história</span>
+    <h2 data-valy="historiaTitulo">Uma clínica de bairro que decidiu explicar tudo</h2>
+    
+    <p data-valy="historiaTexto">O Sorria Bauru - Clinica Odontologica em Bauru nasceu de uma percepção simples: muita gente adia o cuidado porque não entende o que vai ser feito nem quanto vai custar. A decisão foi inverter a ordem — explicar primeiro, orçar por escrito e deixar o paciente decidir sem pressão. O boca a boca fez o resto, e hoje boa parte de quem chega vem indicado por quem já foi atendido.</p>
+    
+  </div>
+</section>
+
+<section class="depo" data-bloco="depoimentos" data-bloco-nome="Depoimentos">
+  <div class="wrap">
+    <span class="tag" data-valy="depoTag">Depoimentos</span>
+    <h2 data-valy="depoTitulo">O que pacientes contaram depois do tratamento</h2>
+    
+    <div class="grade-dep">
+      <div class="dep" data-lista="depoimentos" data-i="0">
+        <div class="estrelas" aria-label="cinco estrelas">★★★★★</div>
+        <p data-campo="texto">&ldquo;Foi a primeira vez que entendi de verdade o que precisava ser feito. Saí com tudo por escrito.&rdquo;</p>
+        <div class="assina">
+          <span class="ini">P</span>
+          <span><b data-campo="autor">Paciente atendido</b><em data-campo="detalhe">primeira avaliação</em></span>
+        </div>
+      </div>
+      <div class="dep" data-lista="depoimentos" data-i="1">
+        <div class="estrelas" aria-label="cinco estrelas">★★★★★</div>
+        <p data-campo="texto">&ldquo;Marquei e fui atendido no horário. Sem espera e sem enrolação.&rdquo;</p>
+        <div class="assina">
+          <span class="ini">P</span>
+          <span><b data-campo="autor">Paciente da casa</b><em data-campo="detalhe">hora marcada</em></span>
+        </div>
+      </div>
+      <div class="dep" data-lista="depoimentos" data-i="2">
+        <div class="estrelas" aria-label="cinco estrelas">★★★★★</div>
+        <p data-campo="texto">&ldquo;Explicaram as opções e o valor antes. Escolhi com calma, sem pressão nenhuma.&rdquo;</p>
+        <div class="assina">
+          <span class="ini">P</span>
+          <span><b data-campo="autor">Paciente de Bauru, SP</b><em data-campo="detalhe">plano de tratamento</em></span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="chamada" data-bloco="chamada" data-bloco-nome="Chamada final">
+  <div class="wrap">
+    <h2 data-valy="chamadaTitulo">Vamos cuidar disso?</h2>
+    
+    <p data-valy="chamadaTexto">Agende sua avaliação e tire suas dúvidas com quem entende.</p>
+    <a class="btn" href="https://wa.me/5514991879814" data-valy="chamadaBotao">Falar no WhatsApp</a>
+    
+  </div>
+</section>
+
+<section class="contato" id="contato" data-bloco="contato" data-bloco-nome="Contato">
+  <div class="wrap">
+    <span class="tag" data-valy="contatoTag">Contato</span>
+    <h2 data-valy="contatoTitulo">Onde ficamos e como marcar sua avaliação</h2>
+    <p class="intro" data-valy="contatoTexto">Atendemos em Bauru, SP, com hora marcada. Para agendar sua avaliação, o WhatsApp é o caminho mais rápido.</p>
+    
+    <div class="cols">
+      <div class="campo"><h3>Endereço</h3><p>R. Batista de Carvalho, 3 - 83 - Centro, Bauru - SP, 17010-001</p></div>
+      <div class="campo"><h3>Telefone e WhatsApp</h3><a href="tel:(14) 99187-9814">(14) 99187-9814</a></div>
+      <div class="campo"><h3>Atendimento</h3><p data-valy="contatoAtendimento">Todos os dias, no horário comercial.</p></div>
+    </div>
+    <div class="mapa"><iframe src="https://www.google.com/maps?q=R.%20Batista%20de%20Carvalho%2C%203%20-%2083%20-%20Centro%2C%20Bauru%20-%20SP%2C%2017010-001%2C%20Bauru%2C%20SP%2C%20Brasil&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Como chegar"></iframe></div>
+    
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" data-valy="rodapeTexto">© 2026 Sorria Bauru - Clinica Odontologica em Bauru em Bauru, SP. Todos os direitos reservados.</div>
+</footer>
+
+<a class="zap" href="https://wa.me/5514991879814" data-valy="zapFlutuante">WhatsApp</a>
+
+<!-- Barra fixa do celular (ver .dock no CSS): o mesmo destino do
+     botão do topo, com o ícone do WhatsApp quando há telefone. No
+     desktop ela some e a pílula acima volta. -->
+<div class="dock"><a class="btn" href="https://wa.me/5514991879814"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.7-6.1c-.3-.1-1.5-.7-1.8-.8-.2-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.3 5.3 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.1.6 2.8.5a2.5 2.5 0 0 0 1.6-1.1c.2-.5.2-1 .1-1.1l-.3-.2Z"/></svg>Agendar avaliação</a></div>
+
+<script>
+/* Números que contam ao entrar na tela.
+   ------------------------------------------------------------------
+   Roda só quando o bloco aparece, uma vez, e apenas em valores que são
+   número de verdade — "6h-22h" e "4,8" ficam como estão em vez de
+   virarem uma contagem sem sentido.
+
+   Quem pediu menos animação no sistema operacional vê o valor final
+   direto: efeito bonito não vale tontura em ninguém. */
+(function () {
+  var reduzir = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var alvos = document.querySelectorAll(".n b");
+  if (!alvos.length || reduzir || !("IntersectionObserver" in window)) return;
+
+  function anima(el) {
+    var bruto = el.textContent.trim();
+    /* ESTA EXPRESSÃO ESTAVA SEM AS BARRAS INVERTIDAS: era
+       /^(d+)([^d]*)$/, que procura a LETRA "d" e nunca casa com um
+       número. Resultado: os números nunca contaram, em nenhum site
+       gerado até 08/09/2026. Achado ao construir o pacote de
+       movimento, que tinha o mesmo trabalho para fazer.
+
+       Agora aceita prefixo e decimal também — "4,8" e "+500" são o
+       que aparece de verdade na faixa. */
+    var casa = bruto.match(/^([^0-9]*)([0-9]+(?:[.,][0-9]+)?)(.*)$/);
+    if (!casa) return;
+    var prefixo = casa[1] || "";
+    var corpo = casa[2];
+    var sufixo = casa[3] || "";
+    var virgula = corpo.indexOf(",") >= 0;
+    var decimais = /[.,]/.test(corpo) ? corpo.split(/[.,]/)[1].length : 0;
+    var fim = parseFloat(corpo.replace(",", "."));
+    if (!isFinite(fim) || fim < 2) return;
+    var inicio = null;
+    var dur = 1100;
+    function escrever(v) {
+      var t = v.toFixed(decimais);
+      if (virgula) t = t.replace(".", ",");
+      el.textContent = prefixo + t + sufixo;
+    }
+    function passo(t) {
+      if (!inicio) inicio = t;
+      var f = Math.min((t - inicio) / dur, 1);
+      escrever(fim * (1 - Math.pow(1 - f, 3)));
+      if (f < 1) requestAnimationFrame(passo);
+    }
+    escrever(0);
+    requestAnimationFrame(passo);
+  }
+
+  var obs = new IntersectionObserver(function (itens) {
+    itens.forEach(function (i) {
+      if (i.isIntersecting) {
+        anima(i.target);
+        obs.unobserve(i.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  alvos.forEach(function (el) { obs.observe(el); });
+})();
+</script>
+<script data-dur="720" data-fator="1" data-motion="texto-revela">
+(function(){
+
+  var cfg = (document.currentScript && document.currentScript.dataset) || {};
+  var quieto = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  var estreito = !!(window.matchMedia && window.matchMedia("(max-width: 700px)").matches);
+  if (estreito && cfg.mobile === "0") return;
+  var DUR = parseInt(cfg.dur || "720", 10) || 720;
+  var FATOR = parseFloat(cfg.fator || "1") || 1;
+  var COR = cfg.cor || "";
+  var raiz = document.documentElement;
+  if (COR) raiz.style.setProperty("--vm-cor", COR);
+
+  if (!("IntersectionObserver" in window)) return;
+  raiz.style.setProperty("--vm-dur", DUR + "ms");
+  raiz.style.setProperty("--vm-f", String(FATOR));
+
+  var SEL = ".hero .tag, .hero h1, .hero p.sub, .hero .acoes, .hero .fatos, section > .wrap > .tag, section > .wrap > h2, section > .wrap > .intro, section > .wrap > p, .chamada h2, .chamada p";
+  var alvos = Array.prototype.slice.call(document.querySelectorAll(SEL));
+
+  /* Só agora os elementos somem — depois de o script ter certeza de
+     que vai devolvê-los. Um erro antes desta linha deixa a página
+     inteira, que é como uma animação deve falhar. */
+  raiz.classList.add("vm-tx");
+
+  /* No modo marcante, o título vira palavras. Cria os spans por DOM:
+     o texto nunca volta para dentro do HTML como string. */
+  var porPalavra = FATOR >= 1.5;
+  alvos.forEach(function(el, idx){
+    el.classList.add("vm-tx-el");
+    /* Escada curta dentro do mesmo bloco: etiqueta, título, texto. */
+    el.style.setProperty("--vm-d", (idx % 3) * 90 + "ms");
+    if (porPalavra && (el.tagName === "H1" || el.tagName === "H2") && el.childNodes.length === 1 && el.firstChild.nodeType === 3) {
+      var palavras = el.textContent.split(/(\s+)/);
+      el.textContent = "";
+      var n = 0;
+      palavras.forEach(function(p){
+        if (!p) return;
+        if (/^\s+$/.test(p)) { el.appendChild(document.createTextNode(" ")); return; }
+        var s = document.createElement("span");
+        s.className = "vm-tx-w";
+        s.style.setProperty("--vm-d", (n++ * 55) + "ms");
+        s.textContent = p;
+        el.appendChild(s);
+      });
+    }
+  });
+
+  if (quieto) { alvos.forEach(function(el){ el.classList.add("vm-in"); }); return; }
+
+  var obs = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      e.target.classList.add("vm-in");
+      obs.unobserve(e.target);
+    });
+  }, { threshold: 0.15, rootMargin: "0px 0px -6% 0px" });
+  alvos.forEach(function(el){ obs.observe(el); });
+  window.addEventListener("pagehide", function(){ obs.disconnect(); });
+})();
+</script>
+<script data-dur="720" data-fator="1" data-motion="imagem-entra">
+(function(){
+
+  var cfg = (document.currentScript && document.currentScript.dataset) || {};
+  var quieto = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  var estreito = !!(window.matchMedia && window.matchMedia("(max-width: 700px)").matches);
+  if (estreito && cfg.mobile === "0") return;
+  var DUR = parseInt(cfg.dur || "720", 10) || 720;
+  var FATOR = parseFloat(cfg.fator || "1") || 1;
+  var COR = cfg.cor || "";
+  var raiz = document.documentElement;
+  if (COR) raiz.style.setProperty("--vm-cor", COR);
+
+  if (!("IntersectionObserver" in window)) return;
+  raiz.style.setProperty("--vm-dur", DUR + "ms");
+  raiz.style.setProperty("--vm-f", String(FATOR));
+  /* O intervalo da escada cresce com a intensidade. */
+  raiz.style.setProperty("--vm-passo", Math.round(80 * FATOR) + "ms");
+
+  var GRADES = [".grade", ".grade-d", ".grade-p", ".grade-pl", ".grade-dep", ".grade-n", ".perguntas", ".grid-fotos", ".cols"];
+  var alvos = [];
+  GRADES.forEach(function(sel){
+    document.querySelectorAll(sel).forEach(function(g){
+      for (var i = 0; i < g.children.length; i++) {
+        g.children[i].classList.add("vm-im-card");
+        g.children[i].style.setProperty("--vm-i", String(i % 6));
+        alvos.push(g.children[i]);
+      }
+    });
+  });
+
+  raiz.classList.add("vm-im");
+  if (quieto) { alvos.forEach(function(el){ el.classList.add("vm-in"); }); return; }
+
+  var obs = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      e.target.classList.add("vm-in");
+      obs.unobserve(e.target);
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+  alvos.forEach(function(el){ obs.observe(el); });
+  window.addEventListener("pagehide", function(){ obs.disconnect(); });
+})();
+</script>
+<script data-dur="720" data-fator="1" data-motion="fundo-reativo">
+(function(){
+
+  var cfg = (document.currentScript && document.currentScript.dataset) || {};
+  var quieto = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  var estreito = !!(window.matchMedia && window.matchMedia("(max-width: 700px)").matches);
+  if (estreito && cfg.mobile === "0") return;
+  var DUR = parseInt(cfg.dur || "720", 10) || 720;
+  var FATOR = parseFloat(cfg.fator || "1") || 1;
+  var COR = cfg.cor || "";
+  var raiz = document.documentElement;
+  if (COR) raiz.style.setProperty("--vm-cor", COR);
+
+  var secoes = Array.prototype.slice.call(document.querySelectorAll("section.itens, section.dif, section.passos, section.faq, section.contato, section.historia"));
+  if (!secoes.length) return;
+  raiz.style.setProperty("--vm-f", String(FATOR));
+  raiz.classList.add("vm-fr");
+
+  var manchas = [];
+  secoes.forEach(function(s){
+    s.classList.add("vm-fr-sec");
+    var a = document.createElement("div"); a.className = "vm-fr-m vm-fr-m1";
+    var b = document.createElement("div"); b.className = "vm-fr-m vm-fr-m2";
+    s.insertBefore(a, s.firstChild);
+    s.insertBefore(b, s.firstChild);
+    manchas.push(a, b);
+  });
+
+  var barra = document.createElement("div");
+  barra.className = "vm-fr-barra";
+  document.body.appendChild(barra);
+
+  if (quieto) return;
+
+  var suave = DUR >= 1000 ? 0.04 : DUR <= 500 ? 0.14 : 0.08;
+  var mx = 0, my = 0, ax = 0, ay = 0, pedido = 0, ativo = false, temMouse = false;
+
+  function quadro(){
+    pedido = 0;
+    ax += (mx - ax) * suave;
+    ay += (my - ay) * suave;
+    var dx = (ax * 40 * FATOR).toFixed(1), dy = (ay * 40 * FATOR).toFixed(1);
+    for (var i = 0; i < manchas.length; i++) {
+      var s = i % 2 ? -1 : 1;
+      manchas[i].style.transform = "translate3d(" + (s * dx) + "px," + (s * dy) + "px,0)";
+    }
+    var alt = document.documentElement.scrollHeight - window.innerHeight;
+    barra.style.width = (alt > 0 ? Math.max(0, Math.min(1, window.scrollY / alt)) * 100 : 0) + "%";
+    if (Math.abs(mx - ax) > 0.002 || Math.abs(my - ay) > 0.002) pedido = requestAnimationFrame(quadro);
+    else ativo = false;
+  }
+  function acordar(){ if (!ativo) { ativo = true; pedido = requestAnimationFrame(quadro); } }
+
+  /* Mouse: de -1 a 1 em cada eixo. Rolagem: só o eixo Y, para o
+     celular ter movimento sem cursor. */
+  function aoMover(e){ temMouse = true; mx = (e.clientX / window.innerWidth) * 2 - 1; my = (e.clientY / window.innerHeight) * 2 - 1; acordar(); }
+  function aoRolar(){
+    if (!temMouse) { var alt = document.documentElement.scrollHeight - window.innerHeight; my = alt > 0 ? (window.scrollY / alt) * 2 - 1 : 0; }
+    acordar();
+  }
+  window.addEventListener("mousemove", aoMover, { passive: true });
+  window.addEventListener("scroll", aoRolar, { passive: true });
+  aoRolar();
+
+  window.addEventListener("pagehide", function(){
+    window.removeEventListener("mousemove", aoMover);
+    window.removeEventListener("scroll", aoRolar);
+    cancelAnimationFrame(pedido);
+  });
+})();
+</script>
+
+<a id="valy-selo" href="https://valyos.com.br?utm_source=selo&utm_medium=site-free" target="_blank" rel="noopener"><style>#valy-selo{position:fixed;left:14px;bottom:14px;z-index:2147483647;display:inline-flex;align-items:center;gap:8px;background:#0b1510;color:#fff;font:600 12px/1 system-ui,-apple-system,Segoe UI,sans-serif;letter-spacing:.01em;padding:9px 13px 9px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.12);box-shadow:0 10px 28px rgba(0,0,0,.35);text-decoration:none}@media (max-width:760px){#valy-selo{bottom:calc(env(safe-area-inset-bottom,0px) + 88px);left:12px;font-size:11px;padding:7px 11px 7px 9px;gap:6px}}</style><svg width="16" height="16" viewBox="0 0 96 96" fill="none" aria-hidden="true"><defs><linearGradient id="vg" x1="0" y1="0" x2="96" y2="96"><stop offset="0" stop-color="#5eea9a"/><stop offset="1" stop-color="#0a8f4a"/></linearGradient></defs><path d="M48 4c4 22 18 36 40 44-22 8-36 22-40 44-4-22-18-36-40-44 22-8 36-22 40-44z" fill="url(#vg)"/></svg><span style="opacity:.72;font-weight:500">Feito com</span><span style="font-weight:800;letter-spacing:.06em">VALY</span></a></body>
+</html>
